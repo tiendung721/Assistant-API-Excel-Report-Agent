@@ -56,7 +56,7 @@ Bước 2: Chạy chương trình chính
 
 python main.py
 
-## Luồng hoạt động:
+## ⚙️ Luồng hoạt động:
 
 #### 📂 Nhập file Excel 
 
