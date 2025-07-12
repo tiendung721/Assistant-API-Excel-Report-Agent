@@ -11,10 +11,7 @@ Giao tiếp phản hồi với người dùng để cải thiện
 Sinh ra báo cáo tổng hợp bằng tiếng Việt theo định dạng chuyên nghiệp
 
 📁 Cấu trúc thư mục
-css
-Sao chép
-Chỉnh sửa
-.
+
 ├── assistant_config.py              # Khởi tạo Assistant IDs và lưu vào file
 ├── extractor_assistant.py          # Tách section từ file Excel và giao tiếp phản hồi
 ├── extractor_memory.py             # Hệ thống ghi nhớ góp ý từ người dùng theo header
