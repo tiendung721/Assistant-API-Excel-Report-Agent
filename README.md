@@ -10,17 +10,28 @@ Giao tiếp phản hồi với người dùng để cải thiện
 
 Sinh ra báo cáo tổng hợp bằng tiếng Việt theo định dạng chuyên nghiệp
 
-📁 Cấu trúc thư mục
+📁 Cấu trúc thư mục 
+
 assistant_config.py             # Khởi tạo Assistant IDs và lưu vào file
+
 extractor_assistant.py          # Tách section từ file Excel và giao tiếp phản hồi
+
 extractor_memory.py             # Hệ thống ghi nhớ góp ý từ người dùng theo header
+
 analyzer_assistant.py           # Phân tích nội dung từng vùng và sinh thống kê
+
 planner_assistant.py            # Sinh báo cáo tổng hợp từ kết quả phân tích
+
 main.py                         # Chương trình điều phối toàn bộ quá trình
+
 .env                            # API key OpenAI
+
 assistant_ids.json              # File lưu Assistant ID sau khi tạo
+
 output/extracted_sections.json          # Các vùng dữ liệu đã chia
+
 output/analysis_result_interactive.json # Kết quả phân tích chi tiết
+
 output/final_report.txt                 # Báo cáo tiếng Việt cuối cùng
     
 ⚙️ Cài đặt
