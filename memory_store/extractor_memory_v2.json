@@ -1,0 +1,17 @@
+{
+  "patterns": [
+    {
+      "header_fingerprint": "công ty tnhh mtv khoáng sản vôi việt|unnamed: 1|unnamed: 2|unnamed: 3",
+      "feedback_prompt": "agree",
+      "final_prompt": "section có dữ liệu từ dòng 6 đến dòng 32 , có nghĩa là start_row: 6 , end_row: 32 , header_row: 5",
+      "accepted_sections": [
+        {
+          "start_row": 6,
+          "end_row": 32,
+          "header_row": 5,
+          "label": "maintenance_and_repairs"
+        }
+      ]
+    }
+  ]
+}

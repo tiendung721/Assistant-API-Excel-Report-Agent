@@ -1,0 +1,11 @@
+{
+  "regions": {
+    "Region_1": {
+      "region_id": "Region_1",
+      "semantic_type": "maintenance_and_repairs",
+      "start_row": 6,
+      "end_row": 32,
+      "header_row": 5
+    }
+  }
+}
