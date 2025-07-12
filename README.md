@@ -28,15 +28,10 @@ Sinh ra báo cáo tổng hợp bằng tiếng Việt theo định dạng chuyên
 ⚙️ Cài đặt
 Cài thư viện:
 
-bash
-Sao chép
-Chỉnh sửa
 pip install openai pandas python-dotenv
+
 Tạo file .env với nội dung:
 
-env
-Sao chép
-Chỉnh sửa
 OPENAI_API_KEY=sk-xxxx
 
 🚀 Hướng dẫn sử dụng
