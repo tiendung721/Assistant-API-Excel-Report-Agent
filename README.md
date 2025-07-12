@@ -1,36 +1,36 @@
 
-# 🧠 Tổng quan về Assistants API (2024–2025)
+#  Tổng quan về Assistants API (2024–2025)
 
-## 📌 1. Assistants API là gì?
+##  1. Assistants API là gì?
 
 Assistants API là một giao diện lập trình ứng dụng (API) của OpenAI cho phép bạn xây dựng các **AI Assistant chuyên biệt**, hoạt động trực tiếp trong ứng dụng của bạn. Mỗi Assistant có thể:
 
-- 🤖 Gọi các mô hình GPT tùy chọn (GPT-4, GPT-4o, GPT-3.5, v.v.)
-- 🧰 Kết hợp với các công cụ nội bộ như:
+-  Gọi các mô hình GPT tùy chọn (GPT-4, GPT-4o, GPT-3.5, v.v.)
+-  Kết hợp với các công cụ nội bộ như:
   - `code_interpreter` – chạy Python
   - `file_search` – tìm kiếm file
   - `function_calling` – gọi hàm backend
-- 📎 Nhận và xử lý file do người dùng tải lên (Excel, PDF, CSV…)
-- 🧠 Ghi nhớ lịch sử hội thoại (qua đối tượng `Thread`)
+-  Nhận và xử lý file do người dùng tải lên (Excel, PDF, CSV…)
+-  Ghi nhớ lịch sử hội thoại (qua đối tượng `Thread`)
 
-> 📣 **Lưu ý:** Assistants API hiện đang ở giai đoạn Beta và sẽ **dần được thay thế** bởi một hệ thống mới là **Responses API**.  
+>  **Lưu ý:** Assistants API hiện đang ở giai đoạn Beta và sẽ **dần được thay thế** bởi một hệ thống mới là **Responses API**.  
 > OpenAI dự kiến sẽ **ngưng hỗ trợ Assistants API vào giữa năm 2026**.
 
 ---
 
-## 📌 2. Các công cụ hỗ trợ (Tools)
+##  2. Các công cụ hỗ trợ (Tools)
 
 | Công cụ             | Mô tả                                                                 |
 |---------------------|----------------------------------------------------------------------|
-| 🧮 `code_interpreter` | Chạy mã Python: phân tích dữ liệu, đọc Excel, sinh biểu đồ…          |
-| 🔍 `file_search`      | Tìm kiếm văn bản trong file đã upload (PDF, CSV, Markdown…)         |
-| 🔧 `function_calling` | Gọi các hàm backend bạn định nghĩa (API nội bộ, truy vấn database…) |
+|  `code_interpreter` | Chạy mã Python: phân tích dữ liệu, đọc Excel, sinh biểu đồ…          |
+|  `file_search`      | Tìm kiếm văn bản trong file đã upload (PDF, CSV, Markdown…)         |
+|  `function_calling` | Gọi các hàm backend bạn định nghĩa (API nội bộ, truy vấn database…) |
 
 > ✅ Bạn có thể **kích hoạt nhiều công cụ cùng lúc** cho một Assistant.
 
 ---
 
-## 📌 3. Cách hoạt động của Assistants API
+##  3. Cách hoạt động của Assistants API
 
 | Thành phần | Vai trò |
 |------------|--------|
@@ -42,19 +42,19 @@ Assistants API là một giao diện lập trình ứng dụng (API) của OpenA
 
 ---
 
-## 📌 4. Các tính năng nổi bật
+##  4. Các tính năng nổi bật
 
 | Tính năng                   | Ý nghĩa |
 |-----------------------------|--------|
-| ✅ `Persistent Threads`     | Assistant nhớ toàn bộ hội thoại trước đó → cho phép hỏi tiếp nối |
-| ✅ `Auto Truncation`        | Khi quá dài, assistant sẽ tự cắt ngữ cảnh phù hợp |
-| ✅ `File input/output`      | Assistant có thể đọc file và sinh file mới (CSV, Excel, PNG…) |
-| ✅ `Multi-tool integration` | Assistant có thể đồng thời chạy Python, gọi API và tìm kiếm file |
-| ✅ `Run tracking`           | Bạn có thể kiểm tra từng bước Assistant thực hiện trong quá trình xử lý |
+| `Persistent Threads`     | Assistant nhớ toàn bộ hội thoại trước đó → cho phép hỏi tiếp nối |
+| `Auto Truncation`        | Khi quá dài, assistant sẽ tự cắt ngữ cảnh phù hợp |
+| `File input/output`      | Assistant có thể đọc file và sinh file mới (CSV, Excel, PNG…) |
+| `Multi-tool integration` | Assistant có thể đồng thời chạy Python, gọi API và tìm kiếm file |
+| `Run tracking`           | Bạn có thể kiểm tra từng bước Assistant thực hiện trong quá trình xử lý |
 
 ---
 
-## 🧩 Kiến trúc tổng thể (mô hình luồng xử lý)
+##  Kiến trúc tổng thể (mô hình luồng xử lý)
 
 <img width="1360" height="453" alt="image" src="https://github.com/user-attachments/assets/d2d56d02-ff03-4e19-a060-1f6928fb392a" />
 
@@ -69,7 +69,7 @@ Assistants API là một giao diện lập trình ứng dụng (API) của OpenA
 
 ---
 
-## 📣 Lưu ý cho developer
+####  Lưu ý 
 
 - Nên chuẩn bị dần kế hoạch chuyển sang **Responses API**
 - Tối ưu cấu trúc hội thoại để tránh giới hạn token trong `thread`
