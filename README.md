@@ -10,7 +10,7 @@ Giao tiếp phản hồi với người dùng để cải thiện
 
 Sinh ra báo cáo tổng hợp bằng tiếng Việt theo định dạng chuyên nghiệp
 
-📁 Cấu trúc thư mục 
+## 📁 Cấu trúc thư mục 
 
 assistant_config.py             # Khởi tạo Assistant IDs và lưu vào file
 
@@ -34,7 +34,7 @@ output/analysis_result_interactive.json # Kết quả phân tích chi tiết
 
 output/final_report.txt                 # Báo cáo tiếng Việt cuối cùng
     
-⚙️ Cài đặt
+## ⚙️ Cài đặt
 Cài thư viện:
 
 pip install openai pandas python-dotenv
@@ -43,7 +43,7 @@ Tạo file .env với nội dung:
 
 OPENAI_API_KEY=sk-xxxx
 
-🚀 Hướng dẫn sử dụng
+## 🚀 Hướng dẫn sử dụng
 
 Bước 1: Tạo Assistant
 Chạy một lần:
@@ -56,40 +56,40 @@ Bước 2: Chạy chương trình chính
 python main.py
 Luồng hoạt động:
 
-📂 Nhập file Excel
+## 📂 Nhập file Excel
 
-📌 Tự động chia vùng dữ liệu
+## 📌 Tự động chia vùng dữ liệu
 
 User góp ý nếu cần → chương trình ghi nhớ góp ý
 
 Nếu user agree, kết quả sẽ được lưu lại
 
-📊 Phân tích từng vùng dữ liệu
+## 📊 Phân tích từng vùng dữ liệu
 
 Assistant gợi ý group_by (chiều phân tích chính)
 
 User có thể xác nhận hoặc chọn lại chiều khác
 
-📝 Sinh báo cáo tổng hợp
+## 📝 Sinh báo cáo tổng hợp
 
 Dạng tiếng Việt, đầy đủ các phần: Tổng quan, Thống kê, Nhận định, Đề xuất
 
 Ghi ra file final_report.txt
 
-📌 Kết quả đầu ra
+## 📌 Kết quả đầu ra
 
 output/extracted_sections.json: Các vùng dữ liệu đã chia tự động từ file Excel
 output/analysis_result_interactive.json :	Kết quả phân tích chi tiết từng section
 output/final_report.txt	: Báo cáo tổng hợp tiếng Việt chuẩn chuyên nghiệp
 
-🧠 Cơ chế học hỏi (Memory)
+## 🧠 Cơ chế học hỏi (Memory)
 Mỗi góp ý của người dùng về section sẽ được lưu lại theo headers fingerprint.
 
 Lần sau gặp bảng có header tương tự → assistant tự đề xuất thông minh hơn.
 
 Nếu người dùng chọn agree, chương trình sẽ ghi lại thread_id để duy trì logic.
 
-📚 Ví dụ định dạng báo cáo sinh ra
+## 📚 Ví dụ định dạng báo cáo sinh ra
 
 🔹 Khu vực: Region_1
 Chiều phân tích chính: Ghi chú
