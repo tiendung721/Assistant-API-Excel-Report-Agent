@@ -112,4 +112,4 @@ Cần ưu tiên kiểm tra nhóm lò Lò 1–3 và theo dõi thêm lò 9...
 # Note
 
 - Assistant API (v1 và v2) sẽ dần được thay thế bởi Responses API — một phiên bản đơn giản hơn, linh hoạt hơn và dễ tích hợp hơn. OpenAI đang hoàn thiện Responses API để đạt đủ tính năng tương đương Assistants API, sau đó mới chính thức sunset Assistants.
-- Hiện tại Assistant API chỉ hỗ trợ học và ghi nhớ qua uy trì 1 thread_id,khởi tap=ọ 1 thread khác thì assistant không còn khả năng học nữa . Nhưng điều này cũng đi kèm rủi ro bị giới hạn token nếu không kiểm soát tốt , Assistant trả lỗi rate_limit_exceeded : "Requested 36042, Limit 30000" 
+- Hiện tại Assistant API chỉ hỗ trợ học và ghi nhớ qua uy trì 1 thread_id , khởi tạo 1 thread khác thì assistant không còn khả năng học nữa . Nhưng điều này cũng đi kèm rủi ro bị giới hạn token nếu không kiểm soát tốt , Assistant trả lỗi rate_limit_exceeded : "Requested 36042, Limit 30000" .
