@@ -76,6 +76,7 @@ Assistants API là một giao diện lập trình ứng dụng (API) của OpenA
 - Tận dụng tốt `function_calling` và `code_interpreter` để xây workflow linh hoạt
 
 
+
 # Assistant-API-Excel-Report-Agent
 
 Chương trình này xây dựng một AI Agent hoàn chỉnh sử dụng OpenAI Assistant API v2 để:
