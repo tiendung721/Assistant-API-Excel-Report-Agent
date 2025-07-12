@@ -49,34 +49,38 @@ Bước 1: Tạo Assistant
 Chạy một lần:
 
 python assistant_config.py
+
 → Tạo ra 3 assistant: section_classifier, analyzer, planner và lưu assistant_ids.json.
 
 Bước 2: Chạy chương trình chính
 
 python main.py
-Luồng hoạt động:
 
-## 📂 Nhập file Excel
+## Luồng hoạt động:
 
-## 📌 Tự động chia vùng dữ liệu
+#### 📂 Nhập file Excel 
+
+assistant_API không còn hỗ trợ mở file excel , sử dụng pandas 
+
+#### 📌 Tự động chia vùng dữ liệu
 
 User góp ý nếu cần → chương trình ghi nhớ góp ý
 
 Nếu user agree, kết quả sẽ được lưu lại
 
-## 📊 Phân tích từng vùng dữ liệu
+#### 📊 Phân tích từng vùng dữ liệu
 
 Assistant gợi ý group_by (chiều phân tích chính)
 
 User có thể xác nhận hoặc chọn lại chiều khác
 
-## 📝 Sinh báo cáo tổng hợp
+#### 📝 Sinh báo cáo tổng hợp
 
 Dạng tiếng Việt, đầy đủ các phần: Tổng quan, Thống kê, Nhận định, Đề xuất
 
 Ghi ra file final_report.txt
 
-## 📌 Kết quả đầu ra
+#### 📌 Kết quả đầu ra
 
 output/extracted_sections.json: Các vùng dữ liệu đã chia tự động từ file Excel
 output/analysis_result_interactive.json :	Kết quả phân tích chi tiết từng section
